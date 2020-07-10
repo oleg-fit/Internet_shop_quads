@@ -1,0 +1,43 @@
+.menu-categories__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-categories__list-link {
+  position: relative;
+
+  outline: none;
+
+  transition: all linear 0.3s;
+}
+
+.menu-categories__list-link:hover,
+.menu-categories__list-link:focus {
+  color: $color-black;
+}
+
+.menu-categories__list-link::before {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  left: auto;
+
+  width: 0;
+  height: 3px;
+
+  background-color: $color-denim;
+
+  transition: all linear 0.3s;
+}
+
+.menu-categories__list-link:hover::before,
+.menu-categories__list-link:focus::before {
+  right: auto;
+  left: 0;
+
+  width: 100%;
+}

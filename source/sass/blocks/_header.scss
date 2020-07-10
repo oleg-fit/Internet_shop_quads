@@ -1,0 +1,66 @@
+.header__top {
+  font-weight: 700;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 21px;
+}
+
+.header__logo {
+  outline: none;
+}
+
+.header__logo svg {
+  fill: $color-shark;
+}
+
+.header__logo:hover svg,
+.header__logo:focus svg {
+  fill: $color-denim;
+}
+
+.header__logo:active svg {
+  fill: rgba($color-denim, 0.7);
+}
+
+.header__box {
+  display: flex;
+}
+
+.header__box-address {
+  position: relative;
+
+  width: 265px;
+
+  margin-right: 60px;
+  padding-left: 30px;
+}
+
+.header__box-address::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/user-icon/icon-address.svg");
+}
+
+.header__bottom {
+  margin-bottom: 78px;
+}
+
+.header__bottom-inner {
+  padding-top: 15px;
+  padding-bottom: 13px;
+
+  background-color: $color-athens-gray;
+}
