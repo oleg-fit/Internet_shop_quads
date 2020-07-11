@@ -1,0 +1,151 @@
+.sale-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 265px;
+  width: 100%;
+
+  border: 1px solid $color-silver;
+  border-radius: 3px;
+
+  transition: all linear 0.2s;
+  outline: none;
+}
+
+.sale-item:hover,
+.sale-item:focus {
+  box-shadow: 3px 3px 20px rgba($color-mine-shaft, 0.4);
+}
+
+.sale-item:focus {
+  box-shadow: 3px 3px 20px rgba($color-denim, 0.25);
+}
+
+.sale-item__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sale-item__info {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  border-radius: 2px 0 0 0;
+
+  background-color: $color-denim;
+}
+
+.sale-item__price {
+  font-family: "Barlow", "Helvetica", serif;
+
+  text-align: right;
+}
+
+.sale-item__price-new {
+  position: relative;
+
+  margin-right: 6px;
+  padding-right: 20px;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32px;
+
+  color: $color-denim;
+}
+
+.sale-item__price-new::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  width: 15px;
+  height: 18px;
+
+  background-image: url(../img/banner-section/icon-price.svg);
+}
+
+.sale-item__price-old {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 15px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+
+  color: $color-silver-2;
+
+  background-image: url(../img/banner-section/icon-price-old-line.svg);
+  background-repeat: no-repeat;
+}
+
+.sale-item__price-old::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -10px;
+
+  width: 8px;
+  height: 10px;
+
+  background-image: url(../img/banner-section/icon-price-old.svg);
+}
+
+.sale-item__img {
+  object-fit: contain;
+}
+
+.sale-item__title {
+  margin-right: 7px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+}
+
+.sale-item__footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  background-color: $color-athens-gray;
+}
+
+.sale-item__footer span {
+  display: block;
+
+  font-family: "Barlow", "Helvetica", serif;
+  font-weight: 700;
+
+  color: $color-denim;
+}
