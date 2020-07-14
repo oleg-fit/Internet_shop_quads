@@ -18,7 +18,7 @@
   box-shadow: 3px 3px 20px rgba($color-mine-shaft, 0.4);
 }
 
-.sale-item:focus {
+.sale-item:active {
   box-shadow: 3px 3px 20px rgba($color-denim, 0.25);
 }
 
@@ -114,7 +114,8 @@
 }
 
 .sale-item__img {
-  object-fit: contain;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sale-item__title {
