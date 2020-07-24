@@ -1,0 +1,31 @@
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__list-item {
+  margin-right: 4px;
+  padding-top: 6px;
+  padding-right: 13px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  color: $color-silver-2;
+
+  border: 2px solid transparent;
+}
+
+.pagination__list-item.pagination__list-item--active {
+  font-weight: 600;
+
+  color: $color-denim;
+
+  border: 2px solid $color-denim;
+}
+
+.pagination__list-link {
+  display: block;
+}

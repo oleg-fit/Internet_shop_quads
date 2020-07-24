@@ -1,0 +1,35 @@
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__list-item {
+  position: relative;
+
+  margin-right: 10px;
+  padding-right: 16px;
+
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-silver-2;
+}
+
+.breadcrumbs__list-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+
+  width: 6px;
+  height: 10px;
+
+  background-image: url(../img/breadcrumbs/icon-arrow-right.svg);
+}
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
