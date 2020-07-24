@@ -1,0 +1,27 @@
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 30px;
+}
+
+.social-list__link {
+  outline: none;
+}
+
+.social-list__link svg {
+  fill: $color-shark;
+
+  transition: all 0.2s linear;
+}
+
+.social-list__link:hover svg,
+.social-list__link:focus svg {
+  fill: $color-denim;
+}
+
+.social-list__link:active svg {
+  fill: rgba($color-denim, 0.5);
+}

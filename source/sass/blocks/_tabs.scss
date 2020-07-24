@@ -1,0 +1,27 @@
+.tabs__box {
+  margin-bottom: 25px;
+}
+
+.tabs__box-item {
+  padding-bottom: 12px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.tabs__box-item + .tabs__box-item {
+  margin-left: 50px;
+}
+
+.tabs__box-item.tabs__box-item--active {
+  border-bottom: 2px solid $color-denim;
+}
+
+.tabs__content-item {
+  display: none;
+}
+
+.tabs__content-item.tabs__content-item--active {
+  display: block;
+}

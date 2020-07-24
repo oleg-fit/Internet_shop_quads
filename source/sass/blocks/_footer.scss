@@ -1,0 +1,139 @@
+.footer {
+  padding-top: 43px;
+  padding-bottom: 22px;
+
+  background: $color-athens-gray;
+}
+
+.footer__top {
+  margin-bottom: 30px;
+}
+
+.footer__top-inner {
+  display: flex;
+  align-items: center;
+}
+
+.footer__top-newslatter {
+  max-width: 335px;
+  width: 100%;
+
+  margin-right: 78px;
+}
+
+.footer__top-info {
+  max-width: 89px;
+  width: 100%;
+
+  margin-right: 62px;
+}
+
+.footer__top-shop {
+  max-width: 141px;
+  width: 100%;
+
+  margin-right: 20px;
+}
+
+.footer__top-social {
+  max-width: 210px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: 78px;
+}
+
+.footer__top-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.footer__form-input {
+  padding-right: 12px;
+  padding-left: 12px;
+
+  line-height: 17px;
+  font-style: 14px;
+
+  background-color: $color-white;
+  border: none;
+}
+
+.footer__form-input::placeholder {
+  color: $color-silver-2;
+}
+
+.footer__form-btn {
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+
+  border: none;
+  background-color: $color-denim;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.footer__form-btn:hover,
+.footer__form-btn:focus {
+  background: rgba($color-denim, 0.8);
+}
+
+.footer__form-btn:active {
+  background: rgba($color-denim, 1);
+}
+
+.footer__list {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__list-item {
+  margin-top: 3px;
+}
+
+.footer__list-link {
+  transition: all 0.2s linear;
+}
+
+.footer__list-link:hover,
+.footer__list-link:focus {
+  color: rgba($color-shark, 0.7);
+}
+
+.footer__list-link:active {
+  color: rgba($color-shark, 0.5);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__bottom-link {
+  margin-right: 40px;
+  margin-left: 40px;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  color: $color-abbey;
+}

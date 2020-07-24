@@ -1,5 +1,8 @@
 .search__tabs {
   margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
 }
 
 .search__tabs-item {
@@ -7,12 +10,28 @@
   padding-right: 26px;
   padding-bottom: 12px;
   padding-left: 26px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  outline: none;
+
+  transition: all 0.2s linear;
+}
+
+.search__tabs-item:hover,
+.search__tabs-item:focus {
+  border-color: $color-dove-gray;
+}
+
+.search__tabs-item:active {
+  border-color: $color-denim;
 }
 
 .search__tabs-item--active {
-  font-weight: 700;
+  color: $color-black;
 
-  background: $color-athens-gray;
+  background-color: $color-athens-gray;
   border-radius: 5px;
 }
 
@@ -69,4 +88,18 @@
   background: $color-denim;
   border: none;
   border-radius: 3px;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all linear 0.2s;
+}
+
+.search__content-btn:hover,
+.search__content-btn:focus {
+  background: rgba($color-denim, 0.8);
+}
+
+.search__content-btn:active {
+  background: rgba($color-denim, 1);
 }

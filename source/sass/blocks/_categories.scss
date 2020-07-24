@@ -29,6 +29,8 @@
   display: flex;
   justify-content: space-between;
 
+  min-height: 155px;
+
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 16px;
@@ -61,7 +63,7 @@
   font-size: 14px;
   line-height: 17px;
 
-  color: $color-silver-2;
+  color: $color-black;
 }
 
 .categories__list-text::after {

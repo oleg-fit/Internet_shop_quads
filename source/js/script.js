@@ -6,6 +6,12 @@ $(function () {
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btn--next"><img src="img/banner-section/icon-arrow-right.svg" alt="Следющий слайд"><span class="visually-hidden">Следющий слайд</span></button>'
   })
 
+  $('.product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btn--prev"><img src="img/product-slider/icon-arrow-black-left.svg" alt="Предыдущий слайд"><span class="visually-hidden">Предыдущий слайд</span></button>',
+    nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btn--next"><img src="img/product-slider/icon-arrow-black-right.svg" alt="Следющий слайд"><span class="visually-hidden">Следющий слайд</span></button>'
+  })
 
   $('.search__tabs-item').on('click', function (e) {
     e.preventDefault();
@@ -15,6 +21,20 @@ $(function () {
 
     $(this).addClass('search__tabs-item--active');
     $($(this).attr('href')).addClass('search__content-item--active');
+  });
+
+  $('.tabs__box-item').on('click', function (e) {
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass('tabs__box-item--active');
+    $($(this).parent().siblings().find('.tabs__content-item')).removeClass('tabs__content-item--active');
+
+    $(this).addClass('tabs__box-item--active');
+    $($(this).attr('href')).addClass('tabs__content-item--active');
+  });
+
+  $('.product-slider__item-favorite').on('click', function () {
+    $(this).toggleClass('product-slider__item-favorite--active');
   });
 
 });
